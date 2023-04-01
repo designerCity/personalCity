@@ -1,0 +1,28 @@
+GET http://localhost:3000/api/members
+## 확인
+### 
+POST http://localhost:3000/api/members
+Content-Type: application/json
+
+{
+
+    "name": "William",
+    "team": "Engineering",
+    "position": "Android Developer",
+    "emailAddress": "zake@google.com",
+    "phoneNumber": "010-xxxx-xxxx",
+    "admissionDate": "2021/06/12",
+    "birthday": "1995/09/27",
+    "profileImage": "profile1.png"
+}
+
+
+### 
+PUT http://localhost:3000/api/members/13
+Content-Type: application/json
+
+{    
+    "position": "I Developer"
+}
+### 
+DELETE http://localhost:3000/api/members/3
